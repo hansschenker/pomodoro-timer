@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Pomodoro Timer</title>
   </head>
   <body>
-    <h3>Pomodoro Timer Title on Index.html</h3>
+    <div class="pomodoro-container">
+      <div class="row">
+        <span>Pomodoro Timer</span>
+      </div>
+      <div class="row">
+        <label for="count-down"
+          >Count down seconds
+          <input id="count-down" type="number" value="5000" />
+        </label>
+        <div class="progress">progress bar</div>
+        <div class="row">
+          Remaining Seconds
+          <label id="remaining">10000</label>
+        </div>
+      </div>
+      <div class="row">
+        <button id="start-button">Start</button>
+        <button id="pause-button">Pause</button>
+        <button id="resume-button">Resume</button>
+        <button id="reset-button">Reset</button>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
